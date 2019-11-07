@@ -1,0 +1,45 @@
+<div nz-row>
+	<div nz-col [nzSpan]='8'>
+		<textarea placeholder= "Text" [(ngModel)]="plainText" ></textarea>
+	</div>
+  <div nz-col [nzSpan]='8'>
+		<textarea placeholder= "Dekrip RSA" [(ngModel)]="dekrip" ></textarea>
+	</div>
+  <div nz-col [nzSpan]='8'>
+		<textarea placeholder= "Split Text" [(ngModel)]="textsplit2" ></textarea>
+	</div>
+  <div nz-col [nzSpan]='8'>
+		<textarea placeholder= "hash dekrip" [(ngModel)]="hashdekrip" ></textarea>
+	</div>
+  
+	<ul nz-col [nzSpan]='8' class="buttonGroup">
+		<li>
+			<button nz-button [nzType]="'primary'" (click)="hashmd5()">
+				<span>Hash</span>
+			</button>
+		</li>
+		<li>
+			<button nz-button [nzType]="'primary'" (click)='encrypt()'>
+				<span>Enkrip</span>
+			</button>
+		</li>
+	</ul>
+  <ul nz-col [nzSpan]='8' class="buttonGroup">
+    <li>
+			<button nz-button [nzType]="'primary'" (click)="decrypt()">
+				<span>Dekrip</span>
+			</button>
+		</li>
+		<li>
+			<button nz-button [nzType]="'primary'" (click)='hashmd5_2()'>
+				<span>Hash</span>
+			</button>
+		</li>
+  </ul>
+	<div nz-col [nzSpan]='8'>
+		<textarea  placeholder= "Hash enkrip" [(ngModel)]="hash" ></textarea>
+    	<textarea  placeholder= "Text, Hash" [(ngModel)]="texthash" ></textarea>
+      	<textarea  placeholder= "RSA" [(ngModel)]="cypherText" ></textarea>
+
+	</div>
+</div>

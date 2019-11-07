@@ -1,0 +1,12 @@
+textarea {
+  width: 100%;
+  min-height: 100px;
+}
+li{
+  margin-bottom: 1%;
+  margin-left: 5%;
+}
+
+ul {
+  float: left;
+}
